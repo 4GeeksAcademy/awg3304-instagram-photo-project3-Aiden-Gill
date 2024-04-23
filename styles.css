@@ -14,14 +14,6 @@ background-color: #342C2C;
     border-radius: 15px;
 }
 
-#dots {
-    position: relative;
-    left: 360px;
-    top: 15px;
-    margin: 0%;
-    padding: 0%; 
-}
-
 i {
 font-size: 30px;
 }
@@ -32,6 +24,7 @@ height: 300px;
 position: relative;
 top: 30px;
 cursor: pointer;
+margin: 0%;
 }
 
 #logo {
@@ -41,7 +34,7 @@ position: relative;
 left: 5px;
 top: -320px;
 bottom: 325px;
-margin: auto;
+margin: 0%;
 cursor: pointer;
 }
 
@@ -90,14 +83,7 @@ cursor: pointer;
     opacity: 0.6;
 }
 
-.fa-bookmark:hover {
-    color: rgba(243, 249, 140, 0.582);
-    opacity: 1;
-    font-size: 27px;
-    transform: translateY(-2px) scale(5px);
-}
-
-.bottomlogos i{
+.icons i{
     position: relative;
     top: -50px;
     left: 20px;
@@ -129,7 +115,22 @@ cursor: pointer;
         opacity: 1;
         text-transform: uppercase;
     }
-    
+
+    #hash1 {
+        transition: all 1s ease 0s;
+    }
+
+    .fa-bookmark:hover {
+        color: rgba(243, 249, 140, 0.582);
+        opacity: 1;
+        font-size: 27px;
+        transform: translateY(-2px) scale(5px);
+    }
+
+    .fa-bookmark {
+        transition: all 0.2s ease 0s;
+    }
+
     .fa-heart {
         opacity:0.6;
     }
@@ -138,6 +139,10 @@ cursor: pointer;
       opacity: 1;
       font-size: 27px;
         transform: translateY(-2px) rotate(10deg);
+    }
+
+    .fa-heart {
+        transition: all 0.2s ease 0s;
     }
 
     .fa-comment {
@@ -151,13 +156,41 @@ cursor: pointer;
         transform: translateY(-2px) rotate(10deg);
     }
 
+    .fa-comment {
+        transition: all 0.2s ease 0s;
+    }
+
     .fa-paper-plane {
         opacity: 0.6;
     }
 
     .fa-paper-plane:hover {
-        color: rgb(180, 236, 236);
+        color: rgb(181, 255, 255);
         opacity:1;
         font-size: 27px;
         transform: translateY(-2px) rotate(10deg);
     }
+
+    .fa-paper-plane:hover {
+        transition: all 0.2s ease 0s;
+
+    }
+
+    .fa-ellipsis-vertical {
+        position: relative;
+        left: 360px;
+        top: 15px;
+        margin: 0%;
+        opacity: 0.6;
+        z-index: 10;
+        transition: all 0.7s ease-in 0s;
+    }
+
+
+
+    .fa-ellipsis-vertical:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+
+    
